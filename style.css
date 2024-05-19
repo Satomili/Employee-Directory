@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #EAEAEA;
+}
+
+/* header */
+
+header {
+    background-image: url(images/group.png);
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgba(100, 100, 100, 1);
+}
+
+.header--title {
+    font-size: 4.75rem;
+    color: white;
+    font-family: "Calistoga", serif;
+    text-shadow: 0px 0px 4px black;
+    text-align: center;
+    margin: 0;
+}
+
+.header--search-container {
+    margin-top: 20px;
+    border: 1px solid white;
+    display: flex;
+}
+
+.header--search-select {
+    font-size: 1.25rem;
+    width: 250px;
+    padding: 10px 15px;
+    border: none;
+    border-right: 2px solid #CBCBCB;
+    background-image: url("images/arrow 1.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    /* Remove the default arrow */
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: none; /* Firefox */
+    appearance: none; /* Standard */
+    cursor: pointer;
+}
+
+.header--search-select:focus {
+    outline: none;
+}
+
+.header--search-input {
+    font-size: 1.25rem;
+    border: none;
+    padding: 10px 15px;
+    width: 300px;
+    cursor: pointer;
+} 
+
+.header--search-input:focus {
+    outline: none;
+}
+
+
+/* main */
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card--image {
+    border-radius: 50%;
+    width: 120px;
+}
+
+.card--name {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.card--title {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.card--bio {
+    height: 180px;
+    margin-top: 0;
+    font-size: 0.94rem;
+}
+ 
+.card--sns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+} 
+
+.card--twitter-icon,
+.card--linkedin-icon {
+    font-size: 23px;
+    color: #000000;
+}
